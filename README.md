@@ -1,1 +1,2 @@
-# ImageMetadataManager
+# Image Metadata Manager
+
