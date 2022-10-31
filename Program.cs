@@ -1,10 +1,11 @@
-﻿string sourceDirectory = "E:\\TBS\\unsorted\\"; // Location of unsorted files
-string baseTargetDirectory = "E:\\TBS\\sorted\\"; // The location where you want sorted files
+﻿string sourceDirectory = "C:\\Users\\twitc\\Pictures\\Switzerland\\"; // Location of unsorted files
+string baseTargetDirectory = "C:\\Users\\twitc\\Pictures\\SwitzerlandSorted\\"; // The location where you want sorted files
 
 int count = 0;
 int total = Directory.EnumerateFiles(sourceDirectory).Where(File => File.EndsWith(".JPG") || File.EndsWith(".CR3") || File.EndsWith(".MP4")).Count(); // Total count of files to be moved
 
 foreach (string x in Directory.EnumerateFiles(sourceDirectory).Where(File => File.EndsWith(".JPG") || File.EndsWith(".CR3") || File.EndsWith(".MP4")))
+//TODO: Take into consideration file types rather than just file extensions
 {
     count++;
 
